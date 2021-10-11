@@ -1,0 +1,5 @@
+ 68%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                     | 676/1000 [07:14<03:19,  1.62it/s]tensor([[0.1226, 0.1687, 0.0000, 0.1580, 0.1884, 0.1444, 0.2178]],
+       grad_fn=<SparsemaxFunctionBackward>)
+['pcm_zcr_sma_amean', 'logHNR_sma_amean', 'pcm_RMSenergy_sma_amean', 'alphaRatioUV_sma3nz_amean', 'voicingFinalUnclipped_sma_amean', 'audspecRasta_lengthL1norm_sma_amean', 'F0final_sma_amean']
+HCIS loss = tensor([0.0212], grad_fn=<DivBackward0>)
+
