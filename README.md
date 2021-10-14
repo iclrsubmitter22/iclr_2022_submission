@@ -8,7 +8,7 @@ The extraction is done with the Opensmile library, all the files concerned are i
 - Mixing the two sets of features
 - Normalizing the values per feature
 
-
+You can run the three steps after downloading the CommonVoice files from the dedicated Mozilla website through running data_preparation/preparation.sh
 ### Pretext task selection and weighting 
 
 Inside the exp_optimizing.py file, you can change the number of epochs for optimization and the function used (softmax/sparsemax) according to either you want a sparse or not weighting for your considered pretext tasks.
@@ -24,7 +24,7 @@ The result of this selection will be output in Lresults in a file named after th
 Pretrained models for the CommonVoice pretraining  are available here : 
 https://1drv.ms/u/s!AtZNOLRhbqF6aH0KE5qIbwzEf60?e=NTaFDL
 
-
+To launch a self-supervised learning, you will need the audio files form CommonVoice, the extracted workers from the first part, 
 
 ### Downstream finetuning
 

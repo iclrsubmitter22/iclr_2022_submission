@@ -1,3 +1,0 @@
-['pcm_zcr_sma_amean', 'logHNR_sma_amean', 'pcm_RMSenergy_sma_amean', 'alphaRatioUV_sma3nz_amean', 'voicingFinalUnclipped_sma_amean', 'audspecRasta_lengthL1norm_sma_amean', 'F0final_sma_amean']
-tensor([[0.0278, 0.0198, 0.0588, 0.2936, 0.0293, 0.2463, 0.3243]],
-       grad_fn=<SoftmaxBackward>)tensor([0.0355], grad_fn=<AddBackward0>)

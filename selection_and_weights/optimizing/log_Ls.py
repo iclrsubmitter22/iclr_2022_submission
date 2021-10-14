@@ -3,6 +3,9 @@ import os
 import sys 
 from tqdm import tqdm
 
+#This script takes as a parameter a directory containing the L matrices for a given dataset
+#It outputs a directory replacing every matrix by its log 
+
 allpathin = sys.argv[1]
 allpathout = sys.argv[2] 
 

@@ -8,8 +8,9 @@ from tqdm import tqdm
 K_dir = sys.argv[1]
 L_dir = sys.argv[2]
 
-n_epochs = 20
-
+#This code outputs the conditional independance value for every considered pseudo-label
+#There is no optimization involved here
+# We use the speaker recognition terminology, but this is valid for every considered downstream task.
 Ks = os.listdir(K_dir)
 speakers = [x.split(".")[0].split("_")[-1] for x in Ks]
 #Loading K matrices 
@@ -27,12 +28,6 @@ for sp in speakers :
         pathtomatrix = os.path.join(pathtodirmatrix, "L_matrix_" +sp+"_"+feat+".npy")
         Lmatrices[sp].append(torch.tensor(np.load(pathtomatrix)))
 print(features)
-#function=torch.nn.Softmax
-function = Sparsemax
-W = torch.nn.Parameter(torch.randn(1,7))
-W.requires_grad = True
-optimizer = torch.optim.SGD([W], lr=0.1, momentum=0.9)
-sparsemax = function(dim=-1)
 
 for i in range(len(features)) :
     print(f"considered feature : {features[i]}")
