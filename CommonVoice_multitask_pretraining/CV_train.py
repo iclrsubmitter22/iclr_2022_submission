@@ -9,6 +9,7 @@ import torch
 import logging
 import speechbrain as sb
 import torchaudio
+from utils import MFCC
 from hyperpyyaml import load_hyperpyyaml
 from speechbrain.tokenizers.SentencePiece import SentencePiece
 from speechbrain.utils.data_utils import undo_padding
@@ -39,9 +40,8 @@ training languages (all CommonVoice languages), and many
 other possible variations.
 
 
-Authors
- * Titouan Parcollet 2020
 """
+
 
 logger = logging.getLogger(__name__)
 signal_workers = ['F0semitoneFrom27.5Hz_sma3nz_amean',
